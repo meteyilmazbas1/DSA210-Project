@@ -1,6 +1,6 @@
 # Gender and Emotion in Song Lyrics
 
-##Motivation    
+## Motivation    
 Music often mirrors human emotions and identities. This project explores whether male and female artists express emotions differently through their lyrics.  
 The goal is to find linguistic and emotional patterns that distinguish gender-based songwriting styles.
 
