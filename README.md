@@ -1,22 +1,22 @@
 # Gender and Emotion in Song Lyrics
 
-##Motivation
+##Motivation    
 Music often mirrors human emotions and identities. This project explores whether male and female artists express emotions differently through their lyrics.  
 The goal is to find linguistic and emotional patterns that distinguish gender-based songwriting styles.
 
-##Research Questions
+## Research Questions
 1. Do male and female artists differ in average sentiment (positive/negative tone)?
 2. Are certain emotions (e.g., joy, sadness, anger) more dominant in one gender's songs?
 3. Are there differences in word usage and self-referential language ("I", "me", "my")?
 
-##Data Sources
+## Data Sources
 - **Lyrics Dataset:** [Genius Song Lyrics (Kaggle)](https://www.kaggle.com/datasets/alik05/songlyrics) — contains artist, song title, lyrics, genre, and year.  
 - **Artist Gender Dataset:** 
   - [MusicBrainz API](https://musicbrainz.org/doc/MusicBrainz_API) — to fetch artist gender programmatically.  
   - or create a small CSV (`artist_gender.csv`) combining data from Wikipedia / MusicBrainz for 100–200 popular artists.
 - Both datasets will be merged on `artist_name` to enrich the lyrics data with gender information.
 
-##Methodology
+## Methodology
 1. **Data Collection & Cleaning**
    - Load lyrics and gender datasets.
    - Remove duplicates, handle missing data, filter for English lyrics.
