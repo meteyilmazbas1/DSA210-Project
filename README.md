@@ -38,9 +38,19 @@ The goal is to find linguistic and emotional patterns that distinguish gender-ba
    - Word clouds for most frequent terms.
    - Feature importance (SHAP or permutation importance).
 
-##Expected Outcomes
+## Expected Outcomes
 - Quantitative evidence of emotional and linguistic differences between male and female artists.  
 - Visual insights (charts, word clouds, feature importance).  
 - A reproducible Jupyter notebook and documented Python code.
 
 ## Tools & Libraries
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+textblob
+nrclex
+scikit-learn
+requests
+langdetect
