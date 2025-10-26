@@ -1,56 +1,67 @@
-# Gender and Emotion in Song Lyrics
+##Overview
 
-## Motivation    
-Music often mirrors human emotions and identities. This project explores whether male and female artists express emotions differently through their lyrics.  
-The goal is to find linguistic and emotional patterns that distinguish gender-based songwriting styles.
+Climate change has been increasingly linked to volatility in agricultural commodity prices. Coffee, as a climate-sensitive crop, offers a clear case to examine this relationship.
+This project investigates how temperature and precipitation variations in major coffee-producing countries (Brazil, Colombia, Ethiopia, Vietnam) influence the global Arabica coffee price.
+By integrating climate reanalysis data with economic time-series, the analysis aims to identify whether climate anomalies can partially explain or predict changes in coffee prices. Understanding these links may help producers and policymakers adapt to climate risks in global trade.
 
-## Research Questions
-1. Do male and female artists differ in average sentiment (positive/negative tone)?
-2. Are certain emotions (e.g., joy, sadness, anger) more dominant in one gender's songs?
-3. Are there differences in word usage and self-referential language ("I", "me", "my")?
+##Project Goal
 
-## Data Sources
-- **Lyrics Dataset:** [Genius Song Lyrics (Kaggle)](https://www.kaggle.com/datasets/alik05/songlyrics) — contains artist, song title, lyrics, genre, and year.  
-- **Artist Gender Dataset:** 
-  - [MusicBrainz API](https://musicbrainz.org/doc/MusicBrainz_API) — to fetch artist gender programmatically.  
-  - or create a small CSV (`artist_gender.csv`) combining data from Wikipedia / MusicBrainz for 100–200 popular artists.
-- Both datasets will be merged on `artist_name` to enrich the lyrics data with gender information.
+The main goal of this project is to explore how climate indicators (temperature, rainfall, anomalies) correlate with coffee price movements and whether short-term or lagged effects exist.
+By studying this connection, I aim to uncover evidence of climate-driven economic fluctuations and evaluate if machine learning models can capture meaningful predictive patterns.
 
-## Methodology
-1. **Data Collection & Cleaning**
-   - Load lyrics and gender datasets.
-   - Remove duplicates, handle missing data, filter for English lyrics.
-   - Normalize artist names and years.
-2. **Feature Extraction**
-   - Sentiment scores (TextBlob / VADER)
-   - Emotion categories (NRC Emotion Lexicon or NRCLex)
-   - Lexical features: word count, pronoun ratio, type-token ratio.
-3. **Exploratory Data Analysis (EDA)**
-   - Compare average sentiment by gender.
-   - Visualize emotion distributions (violin plots, bar charts).
-   - Conduct statistical tests (t-test / Mann-Whitney / ANOVA).
-4. **Machine Learning (Optional)**
-   - Binary classification: predict gender based on lyric features.
-   - Models: Logistic Regression, Random Forest.
-   - Evaluate using ROC-AUC, precision, recall.
-5. **Visualization**
-   - Emotion distributions per gender.
-   - Word clouds for most frequent terms.
-   - Feature importance (SHAP or permutation importance).
+These questions will be addressed through monthly data spanning multiple decades (1990–2025) from trusted open sources (FRED, Berkeley Earth, World Bank).
 
-## Expected Outcomes
-- Quantitative evidence of emotional and linguistic differences between male and female artists.  
-- Visual insights (charts, word clouds, feature importance).  
-- A reproducible Jupyter notebook and documented Python code.
+##Research Questions
 
-## Tools & Libraries
-pandas
-numpy
-matplotlib
-seaborn
-nltk
-textblob
-nrclex
-scikit-learn
-requests
-langdetect
+How do temperature and precipitation changes in coffee-producing countries affect Arabica coffee prices?
+
+Are there delayed (lagged) effects of climate conditions on subsequent coffee price movements?
+
+Which climate variables (temperature, rainfall, anomalies) have the strongest statistical relationship with price levels?
+
+Do correlations differ among producer countries (Brazil vs. Ethiopia vs. Vietnam)?
+
+Can simple regression or tree-based models explain or forecast coffee price changes based on climate data?
+
+Are there seasonal or cyclical patterns connecting production climate and commodity market behavior?
+
+##Dataset
+Primary Data Sources
+
+Arabica Coffee Prices (FRED):
+Monthly Arabica coffee price index (PCOFFOTMUSDM), in U.S. cents per pound, from 1990 to 2025.
+
+Climate Data (Berkeley Earth / World Bank):
+Monthly mean temperature and total precipitation data for key producer countries.
+
+Berkeley Earth provides long-term country-level climate summaries.
+
+World Bank CKP API offers observed monthly temperature and rainfall averages.
+
+##Data Enrichment
+
+Economic and environmental datasets will be merged by year-month identifiers.
+For each country, the merged table will include both current and lagged climate variables (1-, 3-, and 6-month delays) to explore short-term effects.
+
+Temporal Scope
+
+Time period: January 1990 – December 2025
+
+Frequency: Monthly observations
+
+Data Structure
+
+The unified dataset will contain the following variables:
+
+
+##Expected Insights
+
+Visualization of long-term co-movement between global coffee prices and regional climate variables.
+
+Statistical evidence of lagged effects between climate anomalies and price shifts.
+
+Country-specific differences showing which producers are more climate-sensitive.
+
+Regression and feature-importance results highlighting which factors explain price volatility.
+
+Practical interpretation for sustainability and supply-chain risk assessment.
