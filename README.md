@@ -3,8 +3,8 @@
 
 ## Overview  
 Climate change increasingly affects global agricultural commodities, especially coffee.  
-This project examines how **temperature and precipitation changes** in major coffee-producing countries (Brazil, Colombia, Ethiopia, Vietnam) relate to **Arabica coffee price fluctuations**.  
-The study integrates **economic data** (coffee prices) with **climate data** (temperature, rainfall) to reveal possible environmental influences on market volatility.
+This project examines how temperature and precipitation changes in major coffee-producing countries (Brazil, Colombia, Ethiopia, Vietnam) relate to Arabica coffee price fluctuations.  
+The study integrates economic data (coffee prices) with climate data to reveal possible environmental influences on market volatility.
 
 ## Research Questions  
 1. How do temperature and rainfall changes influence Arabica coffee prices?  
@@ -13,15 +13,15 @@ The study integrates **economic data** (coffee prices) with **climate data** (te
 4. Can simple models predict coffee prices using climate indicators?
 
 ## Dataset  
-- **FRED:** Monthly Arabica coffee prices (`PCOFFOTMUSDM`, 1990–2025).  
-- **Berkeley Earth / World Bank CKP:** Monthly temperature and precipitation for each producer country.  
+- FRED: Monthly Arabica coffee prices (`PCOFFOTMUSDM`, 1990–2025).  
+- Berkeley Earth / World Bank CKP: Monthly temperature and precipitation for each producer country.  
 - Datasets were merged by `year-month` and lag features were created (1, 3, 6 months) to study delayed impacts.
 
 ## Data Analysis  
-1. **Data Cleaning:** Standardized time format, removed missing data, created lags.  
-2. **Exploratory Analysis:** Plots and correlations of prices vs. climate variables.  
-3. **Modeling:** Linear Regression, Ridge, and Random Forest to test predictability.  
-4. **Visualization:** Time-series plots, scatter charts, and feature importance graphs.
+1. Data Cleaning: Standardized time format, removed missing data, created lags.  
+2. Exploratory Analysis: Plots and correlations of prices vs. climate variables.  
+3. Modeling: Linear Regression, Ridge, and Random Forest to test predictability.  
+4. Visualization: Time-series plots, scatter charts, and feature importance graphs.
 
 ## Findings  
 - Clear long-term correlations between climate anomalies and Arabica prices.  
