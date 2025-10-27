@@ -1,78 +1,52 @@
-
 # DSA210-Project  
 ## Climate and Coffee Prices: A Data-Enriched Global Study  
 
 ---
 
-## Motivation  
-Coffee is one of the world’s most traded agricultural commodities and is highly sensitive to climate conditions.  
-Global warming and irregular weather patterns increasingly affect coffee yields, influencing both price and supply.  
-This project aims to understand **how temperature and rainfall variations in major coffee-producing countries** (Brazil, Colombia, Ethiopia, Vietnam) affect **Arabica coffee prices**.  
-By studying the intersection of **climate science and economics**, I hope to uncover meaningful patterns that explain market volatility and provide insights for sustainability and economic resilience.
+## Overview  
+Climate change increasingly affects global agricultural commodities, especially coffee.  
+This project examines how **temperature and precipitation changes** in major coffee-producing countries (Brazil, Colombia, Ethiopia, Vietnam) relate to **Arabica coffee price fluctuations**.  
+The study integrates **economic data** (coffee prices) with **climate data** (temperature, rainfall) to reveal possible environmental influences on market volatility.
 
----
 
-## Data Source  
 
-### 1. **Arabica Coffee Prices (FRED)**
-- **Source:** [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/series/PCOFFOTMUSDM)  
-- **Description:** Monthly Arabica coffee prices (`PCOFFOTMUSDM`), measured in U.S. cents per pound.  
-- **Period:** 1990–2025  
+## Research Questions  
+1. How do temperature and rainfall changes influence Arabica coffee prices?  
+2. Are there delayed effects between climate conditions and price changes?  
+3. Which producer countries are most sensitive to climate variables?  
+4. Can simple models predict coffee prices using climate indicators?
 
-### 2. **Climate Data**
-Two complementary datasets were used for environmental variables:  
 
-- **Berkeley Earth:** Country-level monthly average temperatures (°C) and anomalies (1900–present).  
-- **World Bank Climate Knowledge Portal (CKP) API:** Observed monthly averages for temperature and precipitation for each country.  
 
-The datasets were **merged by `year-month` identifiers** to create a unified table combining economic and climate data.
+## Dataset  
+- **FRED:** Monthly Arabica coffee prices (`PCOFFOTMUSDM`, 1990–2025).  
+- **Berkeley Earth / World Bank CKP:** Monthly temperature and precipitation for each producer country.  
+- Datasets were merged by `year-month` and lag features were created (1, 3, 6 months) to study delayed impacts.
 
----
+
 
 ## Data Analysis  
+1. **Data Cleaning:** Standardized time format, removed missing data, created lags.  
+2. **Exploratory Analysis:** Plots and correlations of prices vs. climate variables.  
+3. **Modeling:** Linear Regression, Ridge, and Random Forest to test predictability.  
+4. **Visualization:** Time-series plots, scatter charts, and feature importance graphs.
 
-### Data Preparation  
-- FRED Arabica price data downloaded via `requests`.  
-- Climate data fetched via Berkeley Earth text files or World Bank CKP API.  
-- Data cleaned, standardized, and merged using `pandas`.  
-- Created lag features (`tavg_c_lag1`, `lag3`, `lag6`) to capture delayed climate effects.
 
-### Exploratory Data Analysis (EDA)  
-- Line plots showing co-movement of price and temperature/precipitation.  
-- Correlation heatmaps to identify relationships between variables.  
-- Country-level comparisons to evaluate regional sensitivity.  
-
-### Modeling  
-- Regression methods (Linear, Ridge, Random Forest) to test if climate factors explain price variability.  
-- Time-split validation for predicting monthly price changes.  
-- SHAP and permutation feature importance for model interpretability.  
-
-### Visualization  
-- Price trends vs temperature and precipitation (same-month and lagged).  
-- Scatter plots and bar charts summarizing correlations.  
-- Feature-importance plots explaining key drivers.
-
----
 
 ## Findings  
+- Clear long-term correlations between climate anomalies and Arabica prices.  
+- 3–6 month lag effects observed in temperature and precipitation trends.  
+- Brazil and Vietnam show higher sensitivity than Ethiopia or Colombia.  
+- Tree-based models highlight temperature and rainfall as top predictors.
 
-1. **Visible correlation** between long-term temperature anomalies and Arabica price trends.  
-2. **Lagged relationships** indicate that past 3–6 month climate conditions may influence current price fluctuations.  
-3. **Country variation:** Brazil and Vietnam show stronger climate-price sensitivity, while Ethiopia’s relationship is weaker (possibly due to other economic factors).  
-4. **Model interpretability:** Temperature lags and rainfall variability appear as top predictors in tree-based models.  
-5. **Economic relevance:** Confirms that environmental shocks contribute to price volatility in agricultural markets.
 
----
 
-## Limitations and Future Work  
+## Limitations & Future Work  
+- Uses global price index — local market differences not captured.  
+- Country-level averages may mask local climate variability.  
+- Future work: add ENSO (El Niño/La Niña), export data, and deep learning models.
 
-### Limitations  
-- Coffee price data reflects global averages, not producer-country-specific prices.  
-- Climate data granularity (country-level) may mask local microclimate differences.  
-- Potential confounding factors (currency rates, labor costs, policy shifts) not included.  
 
-### Future Work  
-- Incorporate **ENSO (El Niño/La Niña)** indices for global climate effects.  
-- Add **futures market data** to analyze speculative impacts.  
-- Extend to **supply-chain and export volume** data for a holistic view.  
-- Apply **advanced ML models** (e.g., LSTM for time series forecasting).  
+
+## AI Declaration  
+AI tools (e.g., GPT-5) assisted only in documentation and structure; all data sources are public and cited properly.
