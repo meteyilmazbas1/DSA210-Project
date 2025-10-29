@@ -13,9 +13,9 @@ The study integrates coffee prices with climate data to reveal possible environm
 4. Can simple models predict coffee prices using climate indicators?
 
 ## Dataset  
-- FRED: Monthly Arabica coffee prices (`PCOFFOTMUSDM`, 1990–2025).  
+- FRED: Monthly Arabica coffee prices (PCOFFOTMUSDM, 1990–2025).  
 - Berkeley Earth / World Bank CKP: Monthly temperature and precipitation for each producer country.  
-- Datasets were merged by `year-month` and lag features were created to study delayed impacts.
+- Datasets were merged by year-month and lag features were created to study delayed impacts.
 
 ## Data Analysis  
 1. Data Cleaning: Standardized time format, removed missing data, created lags.  
