@@ -1,7 +1,7 @@
 # DSA210-Project  
 ## Climate and Coffee Prices: A Data-Enriched Global Study  
 
-## Overview  
+## Motivation  
 Climate change increasingly affects global agricultural commodities, especially coffee.  
 This project examines how temperature and precipitation changes in major coffee-producing countries (Brazil, Colombia, Ethiopia, Vietnam) relate to Arabica coffee price fluctuations.  
 The study integrates coffee prices with climate data to reveal possible environmental influences on market volatility.
@@ -12,7 +12,7 @@ The study integrates coffee prices with climate data to reveal possible environm
 3. Which producer countries are most sensitive to climate variables?  
 4. Can simple models predict coffee prices using climate indicators?
 
-## Dataset  
+## Data Source 
 - FRED: Monthly Arabica coffee prices (PCOFFOTMUSDM, 1990–2025).  
 - Berkeley Earth / World Bank CKP: Monthly temperature and precipitation for each producer country.  
 - Datasets were merged by year-month and lag features were created to study delayed impacts.
