@@ -4,15 +4,15 @@
 ### Motivation  
 One of the most traded agricultural products and a vital export for many tropical economies is coffee.  
  I chose this subject to research how environmental factors affect the volatility of the coffee market in the coffee-producing countries.  
- My objective is to determine whether coffee prices in producing nations are related to temperature and precipitation change. I also use Starbucks store counts to see if countries with larger coffee markets react differently to climate-driven price changes.
+ My aim is to determine whether coffee prices in producing countries are related to temperature and rainfall change. I also use Starbucks store counts to see if countries with larger coffee markets react differently to climate-driven price changes.
 
 ### Research Questions  
 How do temperature and rainfall changes in producer countries affect coffee production?   
 Can we predict coffee price volatility using combined climate, production, and transportation variables?
 Does the size of a country’s coffee retail market (Starbucks store counts) influence the relationship between climate variables and price change?
 ### Hypothesis  
-H₀: Starbucks store counts has no relationship with the impact of climate variables on coffee prices.
-H₁: Higher store counts show stronger or more stable links between climate variables and price fluctuations.
+H₀: There is no correlation between the number of Starbucks locations and how climate factors affect coffee prices.
+H₁: Higher store counts show stronger links between price variation and climate variables.
 
 ### Data and Sources  
 
