@@ -2,10 +2,9 @@
 ## Climate Effects on Global Coffee Prices  
 
 ### Motivation  
-One of the most traded agricultural products and a vital export for many tropical economies is coffee.  
- I chose this subject to research how environmental factors affect the volatility of the coffee market in the coffee-producing countries.  
+One of the most traded agricultural products and a vital export for many tropical economies is coffee. I chose this subject to research how environmental factors affect the volatility of the coffee market in the coffee-producing countries.  
  
- My aim is to determine whether coffee prices in producing countries are related to temperature and rainfall change. I also use Starbucks store counts to see if countries with larger coffee markets react differently to climate-driven price changes.
+My aim is to determine whether coffee prices in producing countries are related to temperature and rainfall change. I also use Starbucks store counts to see if countries with larger coffee markets react differently to climate-driven price changes.
 
 ### Research Questions  
 1. How do temperature and rainfall changes in producer countries affect coffee production?   
