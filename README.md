@@ -3,16 +3,16 @@
 
 ### Motivation  
 One of the most traded agricultural products and a vital export for many tropical economies is coffee.  
- I chose this subject to research how environmental factors affect the volatility of the coffee market.  
- My objective is to determine whether coffee prices in producing nations are related to temperature and precipitation change.
+ I chose this subject to research how environmental factors affect the volatility of the coffee market in the coffee-producing countries.  
+ My objective is to determine whether coffee prices in producing nations are related to temperature and precipitation change. I also use Starbucks store counts to see if countries with larger coffee markets react differently to climate-driven price changes.
 
 ### Research Questions  
 How do temperature and rainfall changes in producer countries affect coffee production?   
 Can we predict coffee price volatility using combined climate, production, and transportation variables?
-
+Does the size of a country’s coffee retail market (Starbucks store counts) influence the relationship between climate variables and price change?
 ### Hypothesis  
-H₀: Coffee prices depend only on market forces and are not significantly affected by transport or production disruptions.  
-H₁: Climate-related changes in production and disruptions in maritime transportation have a measurable and combined impact on coffee price volatility.  
+H₀: Starbucks store counts has no relationship with the impact of climate variables on coffee prices.
+H₁: Higher store counts show stronger or more stable links between climate variables and price fluctuations.
 
 ### Data and Sources  
 
@@ -20,7 +20,9 @@ FRED – Federal Reserve Economic Data (https://fred.stlouisfed.org/series/PCOFF
 
 Berkeley Earth (https://berkeleyearth.org/data/) World Bank CKP(https://climateknowledgeportal.worldbank.org/) Copernicus (ERA5) (https://cds.climate.copernicus.eu/) WorldClim (https://www.worldclim.org/data/monthlywth.html)
 
-FAOSTAT – Food and Agriculture Organization (https://www.fao.org/faostat/en/#data/QC)
+FAOSTAT Food and Agriculture Organization (https://www.fao.org/faostat/en/#data/QC)
+
+Statista - https://www.statista.com/statistics/218366/starbucks-stores-worldwide/ Kaggle - https://www.kaggle.com/code/gpreda/starbucks-location-worldwide-data-exploration
 ### Methodology  
 Data Collection
 - Collect data from FRED, FAOSTAT, Berkeley Earth, and shipping indicators.  
@@ -31,4 +33,5 @@ Data Integration
 
 Data Analysis
 - Perform correlation and time-lag analysis to explore relationships.   
-
+- Merge Starbucks store data with climate–price panel by country, forward-filling values to match time frequency.
+Run regression models with interaction terms to test whether market size moderates the climate–price relationship.
