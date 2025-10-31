@@ -11,7 +11,7 @@ How do temperature and rainfall changes in producer countries affect coffee prod
 Can we predict coffee price volatility using combined climate, production, and transportation variables?
 Does the size of a country’s coffee retail market (Starbucks store counts) influence the relationship between climate variables and price change?
 ### Hypothesis  
-H₀: There is no correlation between the number of Starbucks locations and how climate factors affect coffee prices.
+H₀: There is no correlation between the number of Starbucks store counts and how climate factors affect coffee prices.
 H₁: Higher store counts show stronger links between price variation and climate variables.
 
 ### Data and Sources  
@@ -34,4 +34,4 @@ Data Integration
 Data Analysis
 - Perform correlation and time-lag analysis to explore relationships.   
 - Merge Starbucks store data with climate–price panel by country, forward-filling values to match time frequency.
-Run regression models with interaction terms to test whether market size moderates the climate–price relationship.
+- Run regression models with interaction terms to test whether market size moderates the climate–price relationship.
