@@ -12,8 +12,10 @@ My aim is to determine whether coffee prices in producing countries are related 
 3. Does the size of a country’s coffee retail market (Starbucks store counts) influence the relationship between climate variables and price change?
 ### Hypothesis  
 H₀: There is no correlation between the number of Starbucks store counts and how climate factors affect coffee prices. 
-
 H₁: Higher store counts show stronger links between price variation and climate variables.
+
+H₀: Coffee production levels do not affect global coffee prices.
+H₁: Lower production correlates with higher coffee prices.
 
 ### Data and Sources  
 
