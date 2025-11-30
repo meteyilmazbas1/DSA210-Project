@@ -15,13 +15,13 @@ H₀: There is no correlation between the number of Starbucks store counts and h
 
 H₁: Higher store counts show stronger links between price variation and climate variables.
 
-H₀: Coffee production levels do not affect global coffee prices.
-
-H₁: Lower production correlates with higher coffee prices.
-
 ### Data and Sources  
 
-FRED – Federal Reserve Economic Data (https://fred.stlouisfed.org/series/PCOFFOTMUSDM)
+Cecafe Brazilian-Coffee Exporters Council (https://www.cecafe.com.br/en/market-indicators/cepea-esalq-prices/#:~:text=Data%20Ar%C3%A1bica%20R%24%20Ar%C3%A1bica%20US%24,733)
+
+Federacion Nacional de Cafeteros de Colombia (https://federaciondecafeteros.org/wp/coffee-statistics/?lang=en#:~:text=,more%20information%20about%20the%20price)
+
+Indonesia Wholesale Price Index: Agriculture: Annual Crops: Coffee Bean - https://www.ceicdata.com/en/indonesia/wholesale-price-index-by-sector-agricultural/wholesale-price-index-agriculture-annual-crops-coffee-bean#:~:text=Indonesia%20Wholesale%20Price%20Index%3A%20Agriculture%3A,is%20categorized%20under%20Indonesia%20Premium
 
 Berkeley Earth (https://berkeleyearth.org/data/) World Bank CKP(https://climateknowledgeportal.worldbank.org/) Copernicus (ERA5) (https://cds.climate.copernicus.eu/) WorldClim (https://www.worldclim.org/data/monthlywth.html)
 
