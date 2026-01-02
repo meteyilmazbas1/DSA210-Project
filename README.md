@@ -4,16 +4,17 @@
 ### Motivation  
 One of the most traded agricultural products and a vital export for many tropical economies is coffee. I chose this subject to research how environmental factors affect the volatility of the coffee market in the coffee-producing countries.  
  
-My aim is to determine whether coffee prices in producing countries are related to temperature and rainfall change. I also use Starbucks store counts to see if countries with larger coffee markets react differently to climate-driven price changes.
+My aim is to determine whether coffee prices in producing countries are related to temperature and rainfall change.
 
 ### Research Questions  
 1. How do temperature and rainfall changes in producer countries affect coffee production?   
-2. Can we predict coffee price volatility using combined climate, production, and transportation variables?
-3. Does the size of a country’s coffee retail market (Starbucks store counts) influence the relationship between climate variables and price change?
+2. Can we predict coffee price volatility using combined climate and production variables?
 ### Hypothesis  
-H₀: There is no correlation between the number of Starbucks store counts and how climate factors affect coffee prices. 
+H₀: Average temperature and coffee production do not have a statistically
+significant effect on coffee prices in producer countries.
 
-H₁: Higher store counts show stronger links between price variation and climate variables.
+H₁: Changes in average temperature and coffee production significantly
+influence coffee prices in producer countries.
 
 ### Data and Sources  
 
@@ -27,10 +28,9 @@ Berkeley Earth (https://berkeleyearth.org/data/) World Bank CKP(https://climatek
 
 FAOSTAT Food and Agriculture Organization (https://www.fao.org/faostat/en/#data/QC)
 
-Statista - https://www.statista.com/statistics/218366/starbucks-stores-worldwide/ Kaggle - https://www.kaggle.com/code/gpreda/starbucks-location-worldwide-data-exploration
 ### Methodology  
 Data Collection
-- Collect data from FRED, FAOSTAT, Berkeley Earth, and shipping indicators.  
+- Collect data from FRED, FAOSTAT and Berkeley Earth.
 - Align all series on a monthly basis.  
 
 Data Integration 
@@ -38,5 +38,27 @@ Data Integration
 
 Data Analysis
 - Perform correlation and time-lag analysis to explore relationships.   
-- Merge Starbucks store data with climate–price panel by country, forward-filling values to match time frequency.
-- Run regression models with interaction terms to test whether market size moderates the climate–price relationship.
+- Merge climate and price panel by country, forward-filling values to match time frequency.
+- Run regression models with interaction terms to test whether there is a climate–price relationship.
+## Machine Learning Analysis
+
+We model coffee price prediction as a supervised learning regression problem.
+The target variable is coffee price, and the input features include:
+
+- Coffee production (tons)
+- Average annual temperature (°C)
+
+We use a linear regression model (OLS) to analyze the relationship between
+production, climate, and coffee prices for Brazil, Colombia, and Indonesia
+between 1996–2024.
+
+### Model Summary
+- Supervised learning (regression)
+- Train/Test split: 75% / 25%
+- Evaluation metrics: R², RMSE
+
+### Key Findings
+- Production has a measurable effect on coffee prices.
+- Temperature captures climate-related supply-side effects.
+- Results suggest climate and production jointly influence price dynamics.
+
