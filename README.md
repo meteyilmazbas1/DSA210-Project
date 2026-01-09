@@ -2,19 +2,22 @@
 ## Climate Effects on Global Coffee Prices  
 
 ### Motivation  
-One of the most traded agricultural products and a vital export for many tropical economies is coffee. I chose this subject to research how environmental factors affect the volatility of the coffee market in the coffee-producing countries.  
- 
-My aim is to determine whether coffee prices in producing countries are related to temperature and rainfall change.
+Coffee is one of the most widely traded agricultural commodities in the world and a crucial export product for many tropical economies. Climate conditions such as temperature variability directly influence coffee yields and production stability, which in turn may affect global and local coffee prices.
+
+The motivation of this project is to investigate whether climate-related variables, together with production levels, have a measurable impact on coffee prices in major coffee-producing countries. Understanding these relationships is increasingly important under climate change conditions.
 
 ### Research Questions  
-1. How do temperature and rainfall changes in producer countries affect coffee production?   
-2. Can we predict coffee price volatility using combined climate and production variables?
-### Hypothesis  
-H₀: Average temperature and coffee production do not have a statistically
+1. How do changes in average temperature affect coffee production in producer countries?
+
+2. Is there a relationship between coffee production levels and coffee prices?
+
+3. Can coffee price movements be explained using combined climate and production variables?
+
+### Hypotheses  
+H₀ (Null Hypothesis): Average temperature and coffee production do not have a statistically
 significant effect on coffee prices in producer countries.
 
-H₁: Changes in average temperature and coffee production significantly
-influence coffee prices in producer countries.
+H₁ (Alternative Hypothesis): Changes in average temperature and coffee production significantly influence coffee prices in producer countries.
 
 ### Data and Sources  
 
@@ -30,16 +33,20 @@ FAOSTAT Food and Agriculture Organization (https://www.fao.org/faostat/en/#data/
 
 ### Methodology  
 Data Collection
-- Collect data from FRED, FAOSTAT and Berkeley Earth.
-- Align all series on a monthly basis.  
+-Coffee production data is obtained from FAOSTAT.
+-Coffee price data is collected from country-specific official sources.
+-Climate data consists of annual average temperature measurements.
 
-Data Integration 
-- Link production to climate metrics by country.  
+Data Integration
+-All datasets are aggregated to an annual frequency.
+-A panel dataset is constructed by country and year.
+-Only overlapping years across all datasets are retained.
 
 Data Analysis
-- Perform correlation and time-lag analysis to explore relationships.   
-- Merge climate and price panel by country, forward-filling values to match time frequency.
-- Run regression models with interaction terms to test whether there is a climate–price relationship.
+-Exploratory data analysis is conducted using descriptive statistics and visualizations.
+-Correlation analysis is used to examine relationships between variables.
+-Regression analysis is applied to evaluate the impact of climate and production on coffee prices.
+
 ## Machine Learning Analysis
 
 We model coffee price prediction as a supervised learning regression problem.
@@ -58,7 +65,7 @@ between 1996–2024.
 - Evaluation metrics: R², RMSE
 
 ### Key Findings
-- Production has a measurable effect on coffee prices.
-- Temperature captures climate-related supply-side effects.
-- Results suggest climate and production jointly influence price dynamics.
+- Coffee production has a measurable effect on coffee prices.
+- Average temperature captures climate-related supply-side influences.
+- Results indicate that climate and production variables jointly contribute to coffee price dynamics in producer countries.
 
