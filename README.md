@@ -32,25 +32,25 @@ FAOSTAT Food and Agriculture Organization
 
 ### Methodology  
 Data Collection
--Coffee production data is obtained from FAOSTAT.
+- Coffee production data is obtained from FAOSTAT.
 
--Coffee price data is collected from country-specific official sources.
+- Coffee price data is collected from country-specific official sources.
 
--Climate data consists of annual average temperature measurements.
+- Climate data consists of annual average temperature measurements.
 
 Data Integration
--All datasets are aggregated to an annual frequency.
+- All datasets are aggregated to an annual frequency.
 
--A panel dataset is constructed by country and year.
+- A panel dataset is constructed by country and year.
 
--Only overlapping years across all datasets are retained.
+- Only overlapping years across all datasets are retained.
 
 Data Analysis
--Exploratory data analysis is conducted using descriptive statistics and visualizations.
+- Exploratory data analysis is conducted using descriptive statistics and visualizations.
 
--Correlation analysis is used to examine relationships between variables.
+- Correlation analysis is used to examine relationships between variables.
 
--Regression analysis is applied to evaluate the impact of climate and production on coffee prices.
+- Regression analysis is applied to evaluate the impact of climate and production on coffee prices.
 
 ## Machine Learning Analysis
 
