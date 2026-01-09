@@ -20,16 +20,15 @@ significant effect on coffee prices in producer countries.
 H₁ (Alternative Hypothesis): Changes in average temperature and coffee production significantly influence coffee prices in producer countries.
 
 ### Data and Sources  
+Cecafe Brazilian-Coffee Exporters Council
 
-Cecafe Brazilian-Coffee Exporters Council (https://www.cecafe.com.br/en/market-indicators/cepea-esalq-prices/#:~:text=Data%20Ar%C3%A1bica%20R%24%20Ar%C3%A1bica%20US%24,733)
+Federacion Nacional de Cafeteros de Colombia
 
-Federacion Nacional de Cafeteros de Colombia (https://federaciondecafeteros.org/wp/coffee-statistics/?lang=en#:~:text=,more%20information%20about%20the%20price)
+Indonesia Wholesale Price Index: Agriculture: Annual Crops: Coffee Bean
 
-Indonesia Wholesale Price Index: Agriculture: Annual Crops: Coffee Bean - https://www.ceicdata.com/en/indonesia/wholesale-price-index-by-sector-agricultural/wholesale-price-index-agriculture-annual-crops-coffee-bean#:~:text=Indonesia%20Wholesale%20Price%20Index%3A%20Agriculture%3A,is%20categorized%20under%20Indonesia%20Premium
+Berkeley Earth World Bank CKP Copernicus (ERA5) WorldClim
 
-Berkeley Earth (https://berkeleyearth.org/data/) World Bank CKP(https://climateknowledgeportal.worldbank.org/) Copernicus (ERA5) (https://cds.climate.copernicus.eu/) WorldClim (https://www.worldclim.org/data/monthlywth.html)
-
-FAOSTAT Food and Agriculture Organization (https://www.fao.org/faostat/en/#data/QC)
+FAOSTAT Food and Agriculture Organization
 
 ### Methodology  
 Data Collection
